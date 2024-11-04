@@ -1,3 +1,38 @@
+.btn-main{
+  padding: 12px;
+  margin: 6px;
+  font-size: bolder;
+  background-color: #ccc;
+  color: black;
+  border: red;
+  box-shadow: 10px 5px 2px black ;
+}
+
+.btn-main:hover{
+  background-color: transparent;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura da tela */
+}
+
+.div-main{
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
+  background-color: rgb(242, 196, 140);
+  border-radius: 15px;
+  margin: 10px;
+  padding: 30px;
+  box-shadow: 1px 2px 2px black ;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
