@@ -7,10 +7,20 @@ import Fragments from './components/Fragments'
 import ListRender from './components/ListRender'
 import ManageData from './components/ManageData'
 import ShowUserName from './components/ShowUserName'
+import ExecuteFunction from './components/ExecuteFunction'
+import ChangeMessageState from './components/ChangeMessageState'
+import { useState } from 'react'
+import UserDetails from './components/UserDetails'
 
 
 
 function App() {
+
+  const users = [
+    {id:1, name: "Lucas", job: "Software Enginner", age: 18},
+    {id:2, name: "Arthur", job: "Sales Person", age: 28},
+    {id:3, name: "Fernando", job: "Business men", age: 8},
+  ]
 
   const cars = [
     {id:1, brand: 'FERRARI', color: 'AMARELA', newCar:true, km:0},
@@ -18,6 +28,16 @@ function App() {
     {id:3, brand: 'BMW', color: 'AZUL', newCar:false, km:2000},
     {id:4, brand: 'BYD', color: 'VERDE MUSGO', newCar:true, km:0},
   ]
+
+  function showMessage(){
+    console.log('MOSTRANDO A MENSAGEM')
+  }
+
+  const [message,setMessage] = useState("")
+  
+  const handleMessage = (msg) => {
+    setMessage(msg)
+  }
 
   return (
     <>
@@ -41,9 +61,16 @@ function App() {
       <CarDetails brand = "AUDI" km = {45000} color = "PRETA" newCar={false}/>
       {/* LOOP RENDERIZAÇÃO */}
       {cars.map((car) => (
-        <CarDetails brand={car.brand} color={car.color} km={car.km} newCar={car.newCar}/>
+        <CarDetails key={car.id} brand={car.brand} color={car.color} km={car.km} newCar={car.newCar}/>
       ))}
-      <Fragments/>
+      {/* <ExecuteFunction myFunction={showMessage}/>
+      <Message msg={message} />
+      <ChangeMessageState handleMessage={handleMessage}/> */}
+      {/* Desafio */}
+      <h1>Esses são todos os usuários do seu sistema</h1>
+      {users.map((user) => (
+        <UserDetails key={user.id} name={user.name} job={user.job} age={user.age}/>
+      ))}
     </>
   )
 }
