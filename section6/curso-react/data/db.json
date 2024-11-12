@@ -39,6 +39,56 @@
       "id": "02ff",
       "name": "teclado",
       "price": "250.89"
+    },
+    {
+      "id": "463c",
+      "name": "Iphone 16 ProMax",
+      "price": "545.69"
+    },
+    {
+      "id": "ef3c",
+      "name": "Iphone 16 ProMax",
+      "price": "545.69"
+    },
+    {
+      "id": "e791",
+      "name": "TESLA",
+      "price": "120.000"
+    },
+    {
+      "id": "a66c",
+      "name": "TESLA CYBERTRUCK",
+      "price": "120.000"
+    },
+    {
+      "id": "9333",
+      "name": "TESTE",
+      "price": "5432"
+    },
+    {
+      "id": "6e42",
+      "name": "Suporte Monitor",
+      "price": "675.99"
+    },
+    {
+      "id": "7f19",
+      "name": "Monster Energy",
+      "price": "21"
+    },
+    {
+      "id": "8dc7",
+      "name": "AirPods 4",
+      "price": "2222"
+    },
+    {
+      "id": "9b4d",
+      "name": "AirPods 4",
+      "price": "2222"
+    },
+    {
+      "id": "9466",
+      "name": "AirPods 4",
+      "price": "2222"
     }
   ]
 }
