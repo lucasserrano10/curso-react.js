@@ -1,0 +1,44 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "16e1",
+      "name": "AirPods 4",
+      "price": "1.299"
+    },
+    {
+      "id": "3f6e",
+      "name": "Tesla Model X",
+      "price": "80.000"
+    },
+    {
+      "id": "a7fe",
+      "name": "Macbook air M1",
+      "price": "6.400"
+    },
+    {
+      "id": "3a51",
+      "name": "Macbook air M2",
+      "price": "7.400"
+    },
+    {
+      "id": "02ff",
+      "name": "teclado",
+      "price": "250.89"
+    }
+  ]
+}
