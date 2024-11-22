@@ -1,4 +1,6 @@
 import styled from "styled-components"
+import { useContext } from "react";
+import { CounterContext } from "../context/CounterContext";
 
 const Container = styled.div`
     background-color: white;
@@ -19,10 +21,12 @@ const Container = styled.div`
 `;
 
 const About = () => {
+    const { counter } = useContext(CounterContext)
     return (
     <>
     <Container>
         <h1>About</h1>
+        <p>Valor do Contador {counter}</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur veritatis laboriosam sequi ducimus animi vitae rerum ratione reiciendis quas?</p>
     </Container>
     </>

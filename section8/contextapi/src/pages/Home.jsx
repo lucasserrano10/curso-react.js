@@ -1,6 +1,9 @@
 import styled from "styled-components"
 import { useContext } from "react";
 import { CounterContext } from "../context/CounterContext";
+import ChangeCounter from "../components/ChangeCounter";
+
+
 
 const Container = styled.div`
     background-color: white;
@@ -27,6 +30,7 @@ const Home = () => {
     <Container>
         <h1>Home</h1>
         <p>valor do context : {counter}</p>
+        <ChangeCounter/>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur veritatis laboriosam sequi ducimus animi vitae rerum ratione reiciendis quas?</p>
     </Container>
     </>
