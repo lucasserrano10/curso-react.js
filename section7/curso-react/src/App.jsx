@@ -34,7 +34,7 @@ function App() {
           {/* Redirect */}
           <Route path='/company' element={<Navigate to='/about'/>}/>
           {/* PAGE 404 */}
-          <Route path='*'element={<Error/>}/>
+          <Route path='*'element={<Error/>}/> 
       
         </Routes>
       </BrowserRouter>
