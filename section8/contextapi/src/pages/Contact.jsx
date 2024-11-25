@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { useTitleColorContext } from "../hooks/useTitleColorContext";
 
 const Container = styled.div`
     background-color: white;
@@ -19,10 +20,11 @@ const Container = styled.div`
 `;
 
 const Contact = () => {
+    const {color} = useTitleColorContext()
     return (
     <>
     <Container>
-        <h1>Contact</h1>
+        <h1 style={{ color:color }}>Contact</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consectetur veritatis laboriosam sequi ducimus animi vitae rerum ratione reiciendis quas?</p>
     </Container>
     </>
